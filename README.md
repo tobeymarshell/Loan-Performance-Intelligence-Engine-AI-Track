@@ -36,39 +36,3 @@ The **Loan Performance Intelligence Engine** is an end-to-end machine learning a
 └── README.md                   # Project documentation
 
 
-
----
-
-## 🚀 Quick Start & Installation
-
-### Prerequisites
-* **Python 3.9+**
-* **Git**
-
-### Step-by-Step Setup
-
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/tobeymarshall/Loan-Performance-Intelligence-Engine-AI-Track.git](https://github.com/tobeymarshall/Loan-Performance-Intelligence-Engine-AI-Track.git)
-   cd Loan-Performance-Intelligence-Engine-AI-Track
-
-
-
-Create and Activate a Virtual Environment:
-
-Windows (Command Prompt / PowerShell):
-python -m venv venv
-venv\Scripts\activate
-
-Linux / macOS:
-python3 -m venv venv
-source venv/bin/activate
-
-Install Dependencies:
-pip install -r requirements.txt
-
-Generate Data / Preprocess:
-python generate_data.py
-
-Launch the Dashboard:
-streamlit run app.py
