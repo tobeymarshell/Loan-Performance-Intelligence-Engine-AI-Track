@@ -1,7 +1,0 @@
-{
-  "balance_consistency": "current_balance <= original_balance * 1.05",
-  "date_validity": "reporting_month >= origination_month",
-  "delinquency_consistency": "if current_status contains 'Delinquent' then days_past_due > 0",
-  "closed_prepaid": "if current_status == 'Prepaid' then prepayment_flag == 1",
-  "document_gaps": "document_status != 'Missing' for active loans"
-}
