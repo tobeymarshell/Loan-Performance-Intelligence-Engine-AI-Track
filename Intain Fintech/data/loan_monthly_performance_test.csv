@@ -1,0 +1,301 @@
+loan_id,reporting_month,origination_month,loan_age_months,remaining_term_months,original_balance,current_balance,interest_rate,credit_score_band,ltv_band,dti_band,state,loan_purpose,occupancy_type,property_type,servicer_name,current_status,days_past_due,modification_flag,prepayment_flag,default_flag,loss_severity_band,last_updated_at,source_system,document_status
+T_0000,2023-01-19,2023-01-19,0,360,781100.0,794113.79,6.15,700-759,<60%,20-30%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0000,2023-02-18,2023-01-19,1,359,781100.0,784620.98,6.15,700-759,<60%,20-30%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System3,Pending
+T_0000,2023-03-20,2023-01-19,2,358,781100.0,764433.37,6.15,700-759,<60%,20-30%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0000,2023-04-19,2023-01-19,3,357,781100.0,773314.96,6.15,700-759,<60%,20-30%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0000,2023-05-19,2023-01-19,4,356,781100.0,770304.8,6.15,700-759,<60%,20-30%,TX,Purchase,Primary,Single Family,Servicer A,60 Days Delinquent,60,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0000,2023-06-18,2023-01-19,5,355,781100.0,773882.37,6.15,700-759,<60%,20-30%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0001,2023-06-14,2023-06-14,0,360,328400.0,327122.69,3.69,640-699,80-90%,<20%,GA,Purchase,Investment,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0001,2023-07-14,2023-06-14,1,359,328400.0,329785.63,3.69,640-699,80-90%,<20%,GA,Purchase,Investment,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0001,2023-08-13,2023-06-14,2,358,328400.0,323536.94,3.69,640-699,80-90%,<20%,GA,Purchase,Investment,Single Family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0001,2023-09-12,2023-06-14,3,357,328400.0,330571.36,3.69,640-699,80-90%,<20%,GA,Purchase,Investment,Single Family,Servicer A,30 Days Delinquent,30,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0001,2023-10-12,2023-06-14,4,356,328400.0,327075.17,3.69,640-699,80-90%,<20%,GA,Purchase,Investment,Single Family,Servicer A,Charged Off,120,0,0,0,>50%,2026-08-27,System2,Complete
+T_0001,2023-11-11,2023-06-14,5,355,328400.0,322902.72,3.69,640-699,80-90%,<20%,GA,Purchase,Investment,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0002,2023-03-26,2023-03-26,0,360,371700.0,370454.41,3.04,700-759,60-80%,>40%,CA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0002,2023-04-25,2023-03-26,1,359,371700.0,372108.94,3.04,700-759,60-80%,>40%,CA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0002,2023-05-25,2023-03-26,2,358,371700.0,376442.58,3.04,700-759,60-80%,>40%,CA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0002,2023-06-24,2023-03-26,3,357,371700.0,368205.31,3.04,700-759,60-80%,>40%,CA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0002,2023-07-24,2023-03-26,4,356,371700.0,374606.71,3.04,700-759,60-80%,>40%,CA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0002,2023-08-23,2023-03-26,5,355,371700.0,364246.11,3.04,700-759,60-80%,>40%,CA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0003,2023-01-08,2023-01-08,0,360,683600.0,675472.29,7.24,640-699,>90%,<20%,GA,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0003,2023-02-07,2023-01-08,1,359,683600.0,674372.52,7.24,640-699,>90%,<20%,GA,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0003,2023-03-09,2023-01-08,2,358,683600.0,684638.57,7.24,640-699,>90%,<20%,GA,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0003,2023-04-08,2023-01-08,3,357,683600.0,675323.4,7.24,640-699,>90%,<20%,GA,Purchase,Primary,Single Family,Servicer B,30 Days Delinquent,30,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0003,2023-05-08,2023-01-08,4,356,683600.0,679444.54,7.24,640-699,>90%,<20%,GA,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0003,2023-06-07,2023-01-08,5,355,683600.0,681110.71,7.24,640-699,>90%,<20%,GA,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System3,Pending
+T_0004,2023-01-28,2023-01-28,0,360,251100.0,247780.89,5.03,760+,80-90%,30-40%,OH,Purchase,Secondary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System1,Missing
+T_0004,2023-02-27,2023-01-28,1,359,251100.0,250222.0,5.03,760+,80-90%,30-40%,OH,Purchase,Secondary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0004,2023-03-29,2023-01-28,2,358,251100.0,247557.34,5.03,760+,80-90%,30-40%,OH,Purchase,Secondary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System1,Pending
+T_0004,2023-04-28,2023-01-28,3,357,251100.0,248097.58,5.03,760+,80-90%,30-40%,OH,Purchase,Secondary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0004,2023-05-28,2023-01-28,4,356,251100.0,251919.64,5.03,760+,80-90%,30-40%,OH,Purchase,Secondary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0004,2023-06-27,2023-01-28,5,355,251100.0,245974.2,5.03,760+,80-90%,30-40%,OH,Purchase,Secondary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0005,2023-01-05,2023-01-05,0,360,167300.0,167969.98,6.62,640-699,<60%,>40%,GA,Refinance,Primary,Condo,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0005,2023-02-04,2023-01-05,1,359,167300.0,167514.06,6.62,640-699,<60%,>40%,GA,Refinance,Primary,Condo,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0005,2023-03-06,2023-01-05,2,358,167300.0,166621.58,6.62,640-699,<60%,>40%,GA,Refinance,Primary,Condo,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System2,Pending
+T_0005,2023-04-05,2023-01-05,3,357,167300.0,165322.43,6.62,640-699,<60%,>40%,GA,Refinance,Primary,Condo,Servicer B,90 Days Delinquent,90,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0005,2023-05-05,2023-01-05,4,356,167300.0,165508.33,6.62,640-699,<60%,>40%,GA,Refinance,Primary,Condo,Servicer B,30 Days Delinquent,30,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0005,2023-06-04,2023-01-05,5,355,167300.0,168040.15,6.62,640-699,<60%,>40%,GA,Refinance,Primary,Condo,Servicer B,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0006,2023-05-25,2023-05-25,0,360,689800.0,694324.97,4.1,700-759,80-90%,30-40%,PA,Purchase,Primary,Townhouse,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0006,2023-06-24,2023-05-25,1,359,689800.0,686125.79,4.1,700-759,80-90%,30-40%,PA,Purchase,Primary,Townhouse,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0006,2023-07-24,2023-05-25,2,358,689800.0,671806.94,4.1,700-759,80-90%,30-40%,PA,Purchase,Primary,Townhouse,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0006,2023-08-23,2023-05-25,3,357,689800.0,688081.26,4.1,700-759,80-90%,30-40%,PA,Purchase,Primary,Townhouse,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System1,Pending
+T_0006,2023-09-22,2023-05-25,4,356,689800.0,671920.78,4.1,700-759,80-90%,30-40%,PA,Purchase,Primary,Townhouse,Servicer A,60 Days Delinquent,60,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0006,2023-10-22,2023-05-25,5,355,689800.0,678592.81,4.1,700-759,80-90%,30-40%,PA,Purchase,Primary,Townhouse,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0007,2023-04-11,2023-04-11,0,360,84900.0,84864.11,6.83,700-759,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0007,2023-05-11,2023-04-11,1,359,84900.0,84572.48,6.83,700-759,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0007,2023-06-10,2023-04-11,2,358,84900.0,84135.76,6.83,700-759,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0007,2023-07-10,2023-04-11,3,357,84900.0,85643.54,6.83,700-759,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0007,2023-08-09,2023-04-11,4,356,84900.0,84763.24,6.83,700-759,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0007,2023-09-08,2023-04-11,5,355,84900.0,86091.23,6.83,700-759,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0008,2023-06-13,2023-06-13,0,360,514800.0,519625.46,3.12,<640,60-80%,30-40%,FL,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0008,2023-07-13,2023-06-13,1,359,514800.0,505911.29,3.12,<640,60-80%,30-40%,FL,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,>50%,2026-08-27,System2,Missing
+T_0008,2023-08-12,2023-06-13,2,358,514800.0,519645.74,3.12,<640,60-80%,30-40%,FL,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System3,Pending
+T_0008,2023-09-11,2023-06-13,3,357,514800.0,513620.51,3.12,<640,60-80%,30-40%,FL,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0008,2023-10-11,2023-06-13,4,356,514800.0,509173.14,3.12,<640,60-80%,30-40%,FL,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0008,2023-11-10,2023-06-13,5,355,514800.0,513044.08,3.12,<640,60-80%,30-40%,FL,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0009,2023-04-28,2023-04-28,0,360,471500.0,471495.77,4.46,640-699,80-90%,>40%,MI,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0009,2023-05-28,2023-04-28,1,359,471500.0,473621.61,4.46,640-699,80-90%,>40%,MI,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0009,2023-06-27,2023-04-28,2,358,471500.0,475238.09,4.46,640-699,80-90%,>40%,MI,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0009,2023-07-27,2023-04-28,3,357,471500.0,469274.69,4.46,640-699,80-90%,>40%,MI,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0009,2023-08-26,2023-04-28,4,356,471500.0,472828.44,4.46,640-699,80-90%,>40%,MI,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0009,2023-09-25,2023-04-28,5,355,471500.0,471662.81,4.46,640-699,80-90%,>40%,MI,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0010,2023-05-27,2023-05-27,0,360,309400.0,305604.02,7.88,700-759,80-90%,30-40%,NY,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System3,Pending
+T_0010,2023-06-26,2023-05-27,1,359,309400.0,308189.23,7.88,700-759,80-90%,30-40%,NY,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0010,2023-07-26,2023-05-27,2,358,309400.0,305808.45,7.88,700-759,80-90%,30-40%,NY,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0010,2023-08-25,2023-05-27,3,357,309400.0,309036.71,7.88,700-759,80-90%,30-40%,NY,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0010,2023-09-24,2023-05-27,4,356,309400.0,302210.31,7.88,700-759,80-90%,30-40%,NY,Purchase,Primary,Single Family,Servicer C,30 Days Delinquent,30,0,0,0,>50%,2026-08-27,System3,Complete
+T_0010,2023-10-24,2023-05-27,5,355,309400.0,302948.53,7.88,700-759,80-90%,30-40%,NY,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0011,2023-03-05,2023-03-05,0,360,286400.0,287153.84,6.87,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,>50%,2026-08-27,System3,Complete
+T_0011,2023-04-04,2023-03-05,1,359,286400.0,289127.72,6.87,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0011,2023-05-04,2023-03-05,2,358,286400.0,289293.42,6.87,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System3,Missing
+T_0011,2023-06-03,2023-03-05,3,357,286400.0,282642.87,6.87,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System3,Missing
+T_0011,2023-07-03,2023-03-05,4,356,286400.0,286207.36,6.87,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer B,90 Days Delinquent,90,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0011,2023-08-02,2023-03-05,5,355,286400.0,278620.09,6.87,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System3,Pending
+T_0012,2023-04-01,2023-04-01,0,360,628900.0,624377.8,5.23,640-699,60-80%,30-40%,GA,Purchase,Primary,Condo,Servicer B,Current,0,0,0,0,>50%,2026-08-27,System3,Complete
+T_0012,2023-05-01,2023-04-01,1,359,628900.0,627236.45,5.23,640-699,60-80%,30-40%,GA,Purchase,Primary,Condo,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0012,2023-05-31,2023-04-01,2,358,628900.0,625387.19,5.23,640-699,60-80%,30-40%,GA,Purchase,Primary,Condo,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0012,2023-06-30,2023-04-01,3,357,628900.0,631458.78,5.23,640-699,60-80%,30-40%,GA,Purchase,Primary,Condo,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System2,Pending
+T_0012,2023-07-30,2023-04-01,4,356,628900.0,620206.87,5.23,640-699,60-80%,30-40%,GA,Purchase,Primary,Condo,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0012,2023-08-29,2023-04-01,5,355,628900.0,624677.84,5.23,640-699,60-80%,30-40%,GA,Purchase,Primary,Condo,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System2,Pending
+T_0013,2023-04-27,2023-04-27,0,360,114800.0,115095.73,4.37,760+,<60%,20-30%,IL,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0013,2023-05-27,2023-04-27,1,359,114800.0,113686.94,4.37,760+,<60%,20-30%,IL,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0013,2023-06-26,2023-04-27,2,358,114800.0,115709.19,4.37,760+,<60%,20-30%,IL,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0013,2023-07-26,2023-04-27,3,357,114800.0,114604.3,4.37,760+,<60%,20-30%,IL,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0013,2023-08-25,2023-04-27,4,356,114800.0,113988.66,4.37,760+,<60%,20-30%,IL,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0013,2023-09-24,2023-04-27,5,355,114800.0,115008.72,4.37,760+,<60%,20-30%,IL,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,>50%,2026-08-27,System3,Complete
+T_0014,2023-04-08,2023-04-08,0,360,227600.0,224423.01,7.3,760+,80-90%,30-40%,FL,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0014,2023-05-08,2023-04-08,1,359,227600.0,227260.62,7.3,760+,80-90%,30-40%,FL,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0014,2023-06-07,2023-04-08,2,358,227600.0,225622.29,7.3,760+,80-90%,30-40%,FL,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0014,2023-07-07,2023-04-08,3,357,227600.0,224950.24,7.3,760+,80-90%,30-40%,FL,Purchase,Primary,Single Family,Servicer A,30 Days Delinquent,30,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0014,2023-08-06,2023-04-08,4,356,227600.0,226940.03,7.3,760+,80-90%,30-40%,FL,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0014,2023-09-05,2023-04-08,5,355,227600.0,222276.04,7.3,760+,80-90%,30-40%,FL,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System1,Missing
+T_0015,2023-01-11,2023-01-11,0,360,599300.0,601141.82,5.5,760+,<60%,20-30%,PA,Purchase,Primary,Condo,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Missing
+T_0015,2023-02-10,2023-01-11,1,359,599300.0,610916.96,5.5,760+,<60%,20-30%,PA,Purchase,Primary,Condo,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0015,2023-03-12,2023-01-11,2,358,599300.0,606204.84,5.5,760+,<60%,20-30%,PA,Purchase,Primary,Condo,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0015,2023-04-11,2023-01-11,3,357,599300.0,591658.05,5.5,760+,<60%,20-30%,PA,Purchase,Primary,Condo,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Missing
+T_0015,2023-05-11,2023-01-11,4,356,599300.0,595164.53,5.5,760+,<60%,20-30%,PA,Purchase,Primary,Condo,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0015,2023-06-10,2023-01-11,5,355,599300.0,584843.69,5.5,760+,<60%,20-30%,PA,Purchase,Primary,Condo,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0016,2023-02-23,2023-02-23,0,360,461200.0,455828.92,6.67,<640,60-80%,20-30%,NY,Refinance,Secondary,Single Family,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0016,2023-03-25,2023-02-23,1,359,461200.0,464075.11,6.67,<640,60-80%,20-30%,NY,Refinance,Secondary,Single Family,Servicer B,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0016,2023-04-24,2023-02-23,2,358,461200.0,467368.63,6.67,<640,60-80%,20-30%,NY,Refinance,Secondary,Single Family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0016,2023-05-24,2023-02-23,3,357,461200.0,458151.48,6.67,<640,60-80%,20-30%,NY,Refinance,Secondary,Single Family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0016,2023-06-23,2023-02-23,4,356,461200.0,459110.53,6.67,<640,60-80%,20-30%,NY,Refinance,Secondary,Single Family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System3,Pending
+T_0016,2023-07-23,2023-02-23,5,355,461200.0,445307.25,6.67,<640,60-80%,20-30%,NY,Refinance,Secondary,Single Family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0017,2023-06-22,2023-06-22,0,360,146000.0,146639.41,6.65,700-759,<60%,<20%,NC,Purchase,Primary,Condo,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0017,2023-07-22,2023-06-22,1,359,146000.0,145705.79,6.65,700-759,<60%,<20%,NC,Purchase,Primary,Condo,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0017,2023-08-21,2023-06-22,2,358,146000.0,146302.91,6.65,700-759,<60%,<20%,NC,Purchase,Primary,Condo,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0017,2023-09-20,2023-06-22,3,357,146000.0,144914.31,6.65,700-759,<60%,<20%,NC,Purchase,Primary,Condo,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0017,2023-10-20,2023-06-22,4,356,146000.0,145734.18,6.65,700-759,<60%,<20%,NC,Purchase,Primary,Condo,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0017,2023-11-19,2023-06-22,5,355,146000.0,145250.13,6.65,700-759,<60%,<20%,NC,Purchase,Primary,Condo,Servicer A,30 Days Delinquent,30,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0018,2023-02-16,2023-02-16,0,360,711600.0,702596.75,2.6,640-699,80-90%,<20%,FL,Refinance,Secondary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0018,2023-03-18,2023-02-16,1,359,711600.0,723569.23,2.6,640-699,80-90%,<20%,FL,Refinance,Secondary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System3,Pending
+T_0018,2023-04-17,2023-02-16,2,358,711600.0,703683.22,2.6,640-699,80-90%,<20%,FL,Refinance,Secondary,Single Family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0018,2023-05-17,2023-02-16,3,357,711600.0,708866.55,2.6,640-699,80-90%,<20%,FL,Refinance,Secondary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0018,2023-06-16,2023-02-16,4,356,711600.0,718770.74,2.6,640-699,80-90%,<20%,FL,Refinance,Secondary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0018,2023-07-16,2023-02-16,5,355,711600.0,703977.3,2.6,640-699,80-90%,<20%,FL,Refinance,Secondary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0019,2023-05-20,2023-05-20,0,360,345100.0,341892.74,3.19,760+,<60%,20-30%,NY,Purchase,Investment,Single Family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0019,2023-06-19,2023-05-20,1,359,345100.0,342125.2,3.19,760+,<60%,20-30%,NY,Purchase,Investment,Single Family,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0019,2023-07-19,2023-05-20,2,358,345100.0,347921.98,3.19,760+,<60%,20-30%,NY,Purchase,Investment,Single Family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0019,2023-08-18,2023-05-20,3,357,345100.0,336837.51,3.19,760+,<60%,20-30%,NY,Purchase,Investment,Single Family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System2,Missing
+T_0019,2023-09-17,2023-05-20,4,356,345100.0,341835.8,3.19,760+,<60%,20-30%,NY,Purchase,Investment,Single Family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0019,2023-10-17,2023-05-20,5,355,345100.0,342552.19,3.19,760+,<60%,20-30%,NY,Purchase,Investment,Single Family,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0020,2023-05-29,2023-05-29,0,360,670900.0,670171.29,6.13,700-759,80-90%,<20%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0020,2023-06-28,2023-05-29,1,359,670900.0,678978.68,6.13,700-759,80-90%,<20%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0020,2023-07-28,2023-05-29,2,358,670900.0,657941.33,6.13,700-759,80-90%,<20%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0020,2023-08-27,2023-05-29,3,357,670900.0,665387.14,6.13,700-759,80-90%,<20%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Missing
+T_0020,2023-09-26,2023-05-29,4,356,670900.0,661464.72,6.13,700-759,80-90%,<20%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0020,2023-10-26,2023-05-29,5,355,670900.0,669133.82,6.13,700-759,80-90%,<20%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0021,2023-05-19,2023-05-19,0,360,640800.0,651441.69,3.39,<640,>90%,30-40%,OH,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0021,2023-06-18,2023-05-19,1,359,640800.0,638579.33,3.39,<640,>90%,30-40%,OH,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0021,2023-07-18,2023-05-19,2,358,640800.0,643259.94,3.39,<640,>90%,30-40%,OH,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0021,2023-08-17,2023-05-19,3,357,640800.0,631949.48,3.39,<640,>90%,30-40%,OH,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System2,Missing
+T_0021,2023-09-16,2023-05-19,4,356,640800.0,638682.46,3.39,<640,>90%,30-40%,OH,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0021,2023-10-16,2023-05-19,5,355,640800.0,633826.76,3.39,<640,>90%,30-40%,OH,Purchase,Primary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0022,2023-01-05,2023-01-05,0,360,518300.0,524165.82,3.91,700-759,<60%,20-30%,NY,Purchase,Primary,Multi-family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0022,2023-02-04,2023-01-05,1,359,518300.0,518060.78,3.91,700-759,<60%,20-30%,NY,Purchase,Primary,Multi-family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0022,2023-03-06,2023-01-05,2,358,518300.0,515101.68,3.91,700-759,<60%,20-30%,NY,Purchase,Primary,Multi-family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0022,2023-04-05,2023-01-05,3,357,518300.0,513985.13,3.91,700-759,<60%,20-30%,NY,Purchase,Primary,Multi-family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System2,Pending
+T_0022,2023-05-05,2023-01-05,4,356,518300.0,513829.8,3.91,700-759,<60%,20-30%,NY,Purchase,Primary,Multi-family,Servicer A,90 Days Delinquent,90,0,0,0,25-50%,2026-08-27,System2,Pending
+T_0022,2023-06-04,2023-01-05,5,355,518300.0,515595.13,3.91,700-759,<60%,20-30%,NY,Purchase,Primary,Multi-family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0023,2023-01-20,2023-01-20,0,360,420900.0,424248.87,7.71,640-699,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System3,Pending
+T_0023,2023-02-19,2023-01-20,1,359,420900.0,409875.24,7.71,640-699,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0023,2023-03-21,2023-01-20,2,358,420900.0,420494.6,7.71,640-699,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0023,2023-04-20,2023-01-20,3,357,420900.0,418898.47,7.71,640-699,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0023,2023-05-20,2023-01-20,4,356,420900.0,416234.42,7.71,640-699,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0023,2023-06-19,2023-01-20,5,355,420900.0,418373.01,7.71,640-699,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer D,30 Days Delinquent,30,0,0,0,>50%,2026-08-27,System1,Complete
+T_0024,2023-06-18,2023-06-18,0,360,784700.0,779163.45,5.58,760+,60-80%,<20%,FL,Purchase,Primary,Multi-family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0024,2023-07-18,2023-06-18,1,359,784700.0,781501.49,5.58,760+,60-80%,<20%,FL,Purchase,Primary,Multi-family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Pending
+T_0024,2023-08-17,2023-06-18,2,358,784700.0,778499.94,5.58,760+,60-80%,<20%,FL,Purchase,Primary,Multi-family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0024,2023-09-16,2023-06-18,3,357,784700.0,765972.16,5.58,760+,60-80%,<20%,FL,Purchase,Primary,Multi-family,Servicer C,Charged Off,120,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0024,2023-10-16,2023-06-18,4,356,784700.0,776578.34,5.58,760+,60-80%,<20%,FL,Purchase,Primary,Multi-family,Servicer C,30 Days Delinquent,30,0,0,0,>50%,2026-08-27,System2,Complete
+T_0024,2023-11-15,2023-06-18,5,355,784700.0,770379.47,5.58,760+,60-80%,<20%,FL,Purchase,Primary,Multi-family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0025,2023-02-15,2023-02-15,0,360,158700.0,158467.09,6.63,760+,80-90%,20-30%,PA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System3,Pending
+T_0025,2023-03-17,2023-02-15,1,359,158700.0,157950.78,6.63,760+,80-90%,20-30%,PA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0025,2023-04-16,2023-02-15,2,358,158700.0,156888.81,6.63,760+,80-90%,20-30%,PA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0025,2023-05-16,2023-02-15,3,357,158700.0,156445.17,6.63,760+,80-90%,20-30%,PA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0025,2023-06-15,2023-02-15,4,356,158700.0,158784.02,6.63,760+,80-90%,20-30%,PA,Purchase,Primary,Single Family,Servicer C,90 Days Delinquent,90,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0025,2023-07-15,2023-02-15,5,355,158700.0,157673.75,6.63,760+,80-90%,20-30%,PA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0026,2023-01-12,2023-01-12,0,360,593900.0,603358.48,5.57,700-759,60-80%,30-40%,TX,Cash-out Refinance,Investment,Single Family,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0026,2023-02-11,2023-01-12,1,359,593900.0,601143.8,5.57,700-759,60-80%,30-40%,TX,Cash-out Refinance,Investment,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0026,2023-03-13,2023-01-12,2,358,593900.0,597743.87,5.57,700-759,60-80%,30-40%,TX,Cash-out Refinance,Investment,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0026,2023-04-12,2023-01-12,3,357,593900.0,589837.05,5.57,700-759,60-80%,30-40%,TX,Cash-out Refinance,Investment,Single Family,Servicer D,Current,0,0,0,0,>50%,2026-08-27,System3,Complete
+T_0026,2023-05-12,2023-01-12,4,356,593900.0,590817.06,5.57,700-759,60-80%,30-40%,TX,Cash-out Refinance,Investment,Single Family,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0026,2023-06-11,2023-01-12,5,355,593900.0,590386.11,5.57,700-759,60-80%,30-40%,TX,Cash-out Refinance,Investment,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System3,Missing
+T_0027,2023-03-11,2023-03-11,0,360,193400.0,192169.7,5.54,<640,60-80%,30-40%,GA,Purchase,Secondary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0027,2023-04-10,2023-03-11,1,359,193400.0,192035.13,5.54,<640,60-80%,30-40%,GA,Purchase,Secondary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0027,2023-05-10,2023-03-11,2,358,193400.0,189815.39,5.54,<640,60-80%,30-40%,GA,Purchase,Secondary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System2,Pending
+T_0027,2023-06-09,2023-03-11,3,357,193400.0,189569.23,5.54,<640,60-80%,30-40%,GA,Purchase,Secondary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0027,2023-07-09,2023-03-11,4,356,193400.0,189243.88,5.54,<640,60-80%,30-40%,GA,Purchase,Secondary,Single Family,Servicer C,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0027,2023-08-08,2023-03-11,5,355,193400.0,191293.04,5.54,<640,60-80%,30-40%,GA,Purchase,Secondary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0028,2023-01-17,2023-01-17,0,360,303700.0,298354.95,3.02,700-759,<60%,<20%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System3,Complete
+T_0028,2023-02-16,2023-01-17,1,359,303700.0,303661.69,3.02,700-759,<60%,<20%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System3,Complete
+T_0028,2023-03-18,2023-01-17,2,358,303700.0,304654.36,3.02,700-759,<60%,<20%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System2,Pending
+T_0028,2023-04-17,2023-01-17,3,357,303700.0,306980.25,3.02,700-759,<60%,<20%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0028,2023-05-17,2023-01-17,4,356,303700.0,302499.37,3.02,700-759,<60%,<20%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System2,Pending
+T_0028,2023-06-16,2023-01-17,5,355,303700.0,300896.97,3.02,700-759,<60%,<20%,TX,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0029,2023-04-25,2023-04-25,0,360,281500.0,283820.39,4.39,<640,80-90%,>40%,OH,Refinance,Primary,Townhouse,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0029,2023-05-25,2023-04-25,1,359,281500.0,279776.29,4.39,<640,80-90%,>40%,OH,Refinance,Primary,Townhouse,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0029,2023-06-24,2023-04-25,2,358,281500.0,277425.73,4.39,<640,80-90%,>40%,OH,Refinance,Primary,Townhouse,Servicer D,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0029,2023-07-24,2023-04-25,3,357,281500.0,277075.14,4.39,<640,80-90%,>40%,OH,Refinance,Primary,Townhouse,Servicer D,30 Days Delinquent,30,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0029,2023-08-23,2023-04-25,4,356,281500.0,275045.13,4.39,<640,80-90%,>40%,OH,Refinance,Primary,Townhouse,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0029,2023-09-22,2023-04-25,5,355,281500.0,275875.96,4.39,<640,80-90%,>40%,OH,Refinance,Primary,Townhouse,Servicer D,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0030,2023-05-27,2023-05-27,0,360,760300.0,760900.64,4.05,<640,60-80%,>40%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Pending
+T_0030,2023-06-26,2023-05-27,1,359,760300.0,757078.1,4.05,<640,60-80%,>40%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0030,2023-07-26,2023-05-27,2,358,760300.0,774761.23,4.05,<640,60-80%,>40%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0030,2023-08-25,2023-05-27,3,357,760300.0,757348.42,4.05,<640,60-80%,>40%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0030,2023-09-24,2023-05-27,4,356,760300.0,748816.03,4.05,<640,60-80%,>40%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System2,Pending
+T_0030,2023-10-24,2023-05-27,5,355,760300.0,757170.02,4.05,<640,60-80%,>40%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Pending
+T_0031,2023-06-03,2023-06-03,0,360,775500.0,782260.8,4.65,760+,80-90%,20-30%,CA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System1,Pending
+T_0031,2023-07-03,2023-06-03,1,359,775500.0,769947.6,4.65,760+,80-90%,20-30%,CA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System2,Missing
+T_0031,2023-08-02,2023-06-03,2,358,775500.0,774648.26,4.65,760+,80-90%,20-30%,CA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0031,2023-09-01,2023-06-03,3,357,775500.0,791022.17,4.65,760+,80-90%,20-30%,CA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0031,2023-10-01,2023-06-03,4,356,775500.0,769714.96,4.65,760+,80-90%,20-30%,CA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0031,2023-10-31,2023-06-03,5,355,775500.0,774359.23,4.65,760+,80-90%,20-30%,CA,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0032,2023-02-17,2023-02-17,0,360,187300.0,187350.14,6.89,640-699,>90%,20-30%,GA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0032,2023-03-19,2023-02-17,1,359,187300.0,187351.75,6.89,640-699,>90%,20-30%,GA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System2,Pending
+T_0032,2023-04-18,2023-02-17,2,358,187300.0,189600.18,6.89,640-699,>90%,20-30%,GA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0032,2023-05-18,2023-02-17,3,357,187300.0,190257.56,6.89,640-699,>90%,20-30%,GA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0032,2023-06-17,2023-02-17,4,356,187300.0,187134.4,6.89,640-699,>90%,20-30%,GA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0032,2023-07-17,2023-02-17,5,355,187300.0,182048.79,6.89,640-699,>90%,20-30%,GA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0033,2023-04-18,2023-04-18,0,360,66500.0,66598.93,4.55,640-699,60-80%,>40%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0033,2023-05-18,2023-04-18,1,359,66500.0,66949.11,4.55,640-699,60-80%,>40%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System1,Missing
+T_0033,2023-06-17,2023-04-18,2,358,66500.0,66410.38,4.55,640-699,60-80%,>40%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0033,2023-07-17,2023-04-18,3,357,66500.0,65706.39,4.55,640-699,60-80%,>40%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0033,2023-08-16,2023-04-18,4,356,66500.0,65820.27,4.55,640-699,60-80%,>40%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0033,2023-09-15,2023-04-18,5,355,66500.0,65782.28,4.55,640-699,60-80%,>40%,OH,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0034,2023-02-21,2023-02-21,0,360,590000.0,588512.35,4.98,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0034,2023-03-23,2023-02-21,1,359,590000.0,584682.72,4.98,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0034,2023-04-22,2023-02-21,2,358,590000.0,586243.04,4.98,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0034,2023-05-22,2023-02-21,3,357,590000.0,583685.41,4.98,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0034,2023-06-21,2023-02-21,4,356,590000.0,589259.7,4.98,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System3,Pending
+T_0034,2023-07-21,2023-02-21,5,355,590000.0,589693.46,4.98,760+,80-90%,30-40%,PA,Purchase,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System3,Pending
+T_0035,2023-04-06,2023-04-06,0,360,363500.0,362582.0,4.69,640-699,<60%,20-30%,PA,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0035,2023-05-06,2023-04-06,1,359,363500.0,363175.38,4.69,640-699,<60%,20-30%,PA,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0035,2023-06-05,2023-04-06,2,358,363500.0,364700.73,4.69,640-699,<60%,20-30%,PA,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0035,2023-07-05,2023-04-06,3,357,363500.0,360952.71,4.69,640-699,<60%,20-30%,PA,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Missing
+T_0035,2023-08-04,2023-04-06,4,356,363500.0,354218.2,4.69,640-699,<60%,20-30%,PA,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0035,2023-09-03,2023-04-06,5,355,363500.0,362203.83,4.69,640-699,<60%,20-30%,PA,Refinance,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0036,2023-03-11,2023-03-11,0,360,116600.0,115990.54,3.01,640-699,80-90%,30-40%,PA,Cash-out Refinance,Primary,Condo,Servicer B,Current,0,0,0,0,>50%,2026-08-27,System2,Pending
+T_0036,2023-04-10,2023-03-11,1,359,116600.0,116270.3,3.01,640-699,80-90%,30-40%,PA,Cash-out Refinance,Primary,Condo,Servicer B,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0036,2023-05-10,2023-03-11,2,358,116600.0,117559.0,3.01,640-699,80-90%,30-40%,PA,Cash-out Refinance,Primary,Condo,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0036,2023-06-09,2023-03-11,3,357,116600.0,115156.45,3.01,640-699,80-90%,30-40%,PA,Cash-out Refinance,Primary,Condo,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0036,2023-07-09,2023-03-11,4,356,116600.0,116221.63,3.01,640-699,80-90%,30-40%,PA,Cash-out Refinance,Primary,Condo,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System2,Missing
+T_0036,2023-08-08,2023-03-11,5,355,116600.0,116790.73,3.01,640-699,80-90%,30-40%,PA,Cash-out Refinance,Primary,Condo,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System2,Pending
+T_0037,2023-04-12,2023-04-12,0,360,562800.0,557366.76,4.93,760+,80-90%,20-30%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0037,2023-05-12,2023-04-12,1,359,562800.0,558207.13,4.93,760+,80-90%,20-30%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0037,2023-06-11,2023-04-12,2,358,562800.0,554754.47,4.93,760+,80-90%,20-30%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0037,2023-07-11,2023-04-12,3,357,562800.0,553559.65,4.93,760+,80-90%,20-30%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0037,2023-08-10,2023-04-12,4,356,562800.0,555011.49,4.93,760+,80-90%,20-30%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0037,2023-09-09,2023-04-12,5,355,562800.0,566186.08,4.93,760+,80-90%,20-30%,NC,Refinance,Secondary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0038,2023-03-16,2023-03-16,0,360,458800.0,460384.8,3.58,<640,80-90%,20-30%,TX,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0038,2023-04-15,2023-03-16,1,359,458800.0,453267.65,3.58,<640,80-90%,20-30%,TX,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System3,Pending
+T_0038,2023-05-15,2023-03-16,2,358,458800.0,449789.37,3.58,<640,80-90%,20-30%,TX,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0038,2023-06-14,2023-03-16,3,357,458800.0,461667.0,3.58,<640,80-90%,20-30%,TX,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0038,2023-07-14,2023-03-16,4,356,458800.0,461350.07,3.58,<640,80-90%,20-30%,TX,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0038,2023-08-13,2023-03-16,5,355,458800.0,455634.33,3.58,<640,80-90%,20-30%,TX,Refinance,Primary,Single Family,Servicer D,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0039,2023-06-10,2023-06-10,0,360,785400.0,788776.4,3.53,760+,<60%,20-30%,CA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0039,2023-07-10,2023-06-10,1,359,785400.0,797136.97,3.53,760+,<60%,20-30%,CA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0039,2023-08-09,2023-06-10,2,358,785400.0,775403.54,3.53,760+,<60%,20-30%,CA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System3,Pending
+T_0039,2023-09-08,2023-06-10,3,357,785400.0,787379.87,3.53,760+,<60%,20-30%,CA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0039,2023-10-08,2023-06-10,4,356,785400.0,784968.91,3.53,760+,<60%,20-30%,CA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System2,Pending
+T_0039,2023-11-07,2023-06-10,5,355,785400.0,762848.36,3.53,760+,<60%,20-30%,CA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0040,2023-05-31,2023-05-31,0,360,220600.0,221575.72,3.02,760+,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System3,Pending
+T_0040,2023-06-30,2023-05-31,1,359,220600.0,216220.06,3.02,760+,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0040,2023-07-30,2023-05-31,2,358,220600.0,220686.38,3.02,760+,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0040,2023-08-29,2023-05-31,3,357,220600.0,213665.39,3.02,760+,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0040,2023-09-28,2023-05-31,4,356,220600.0,217449.9,3.02,760+,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0040,2023-10-28,2023-05-31,5,355,220600.0,220701.69,3.02,760+,<60%,30-40%,PA,Refinance,Primary,Single Family,Servicer A,Charged Off,120,0,0,0,0-10%,2026-08-27,System2,Pending
+T_0041,2023-05-23,2023-05-23,0,360,353000.0,360253.48,4.46,760+,60-80%,30-40%,MI,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0041,2023-06-22,2023-05-23,1,359,353000.0,356341.91,4.46,760+,60-80%,30-40%,MI,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0041,2023-07-22,2023-05-23,2,358,353000.0,357432.56,4.46,760+,60-80%,30-40%,MI,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0041,2023-08-21,2023-05-23,3,357,353000.0,349136.8,4.46,760+,60-80%,30-40%,MI,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System3,Pending
+T_0041,2023-09-20,2023-05-23,4,356,353000.0,355555.57,4.46,760+,60-80%,30-40%,MI,Refinance,Primary,Multi-family,Servicer A,60 Days Delinquent,60,0,0,0,25-50%,2026-08-27,System2,Complete
+T_0041,2023-10-20,2023-05-23,5,355,353000.0,346881.49,4.46,760+,60-80%,30-40%,MI,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0042,2023-06-04,2023-06-04,0,360,456900.0,452862.52,6.67,700-759,60-80%,30-40%,GA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System2,Pending
+T_0042,2023-07-04,2023-06-04,1,359,456900.0,457298.67,6.67,700-759,60-80%,30-40%,GA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0042,2023-08-03,2023-06-04,2,358,456900.0,459281.63,6.67,700-759,60-80%,30-40%,GA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System1,Pending
+T_0042,2023-09-02,2023-06-04,3,357,456900.0,450007.38,6.67,700-759,60-80%,30-40%,GA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,>50%,2026-08-27,System3,Complete
+T_0042,2023-10-02,2023-06-04,4,356,456900.0,456812.73,6.67,700-759,60-80%,30-40%,GA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0042,2023-11-01,2023-06-04,5,355,456900.0,458976.65,6.67,700-759,60-80%,30-40%,GA,Purchase,Primary,Single Family,Servicer C,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0043,2023-06-28,2023-06-28,0,360,643800.0,636748.7,4.02,640-699,60-80%,20-30%,FL,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0043,2023-07-28,2023-06-28,1,359,643800.0,645640.95,4.02,640-699,60-80%,20-30%,FL,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System2,Pending
+T_0043,2023-08-27,2023-06-28,2,358,643800.0,650325.64,4.02,640-699,60-80%,20-30%,FL,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0043,2023-09-26,2023-06-28,3,357,643800.0,645373.22,4.02,640-699,60-80%,20-30%,FL,Refinance,Secondary,Single Family,Servicer D,60 Days Delinquent,60,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0043,2023-10-26,2023-06-28,4,356,643800.0,634197.64,4.02,640-699,60-80%,20-30%,FL,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0043,2023-11-25,2023-06-28,5,355,643800.0,628852.88,4.02,640-699,60-80%,20-30%,FL,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0044,2023-03-23,2023-03-23,0,360,461600.0,459627.2,4.22,640-699,60-80%,20-30%,MI,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0044,2023-04-22,2023-03-23,1,359,461600.0,457628.38,4.22,640-699,60-80%,20-30%,MI,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0044,2023-05-22,2023-03-23,2,358,461600.0,457180.08,4.22,640-699,60-80%,20-30%,MI,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
+T_0044,2023-06-21,2023-03-23,3,357,461600.0,461298.19,4.22,640-699,60-80%,20-30%,MI,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0044,2023-07-21,2023-03-23,4,356,461600.0,457724.48,4.22,640-699,60-80%,20-30%,MI,Purchase,Primary,Single Family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System2,Complete
+T_0044,2023-08-20,2023-03-23,5,355,461600.0,457713.7,4.22,640-699,60-80%,20-30%,MI,Purchase,Primary,Single Family,Servicer B,90 Days Delinquent,90,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0045,2023-04-02,2023-04-02,0,360,509700.0,503525.69,6.03,760+,<60%,20-30%,CA,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0045,2023-05-02,2023-04-02,1,359,509700.0,513767.12,6.03,760+,<60%,20-30%,CA,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0045,2023-06-01,2023-04-02,2,358,509700.0,507965.34,6.03,760+,<60%,20-30%,CA,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0045,2023-07-01,2023-04-02,3,357,509700.0,510832.87,6.03,760+,<60%,20-30%,CA,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System2,Pending
+T_0045,2023-07-31,2023-04-02,4,356,509700.0,501053.62,6.03,760+,<60%,20-30%,CA,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System1,Missing
+T_0045,2023-08-30,2023-04-02,5,355,509700.0,510367.65,6.03,760+,<60%,20-30%,CA,Refinance,Secondary,Single Family,Servicer D,Current,0,0,0,0,>50%,2026-08-27,System3,Pending
+T_0046,2023-06-28,2023-06-28,0,360,219600.0,220945.85,3.58,760+,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System3,Pending
+T_0046,2023-07-28,2023-06-28,1,359,219600.0,220805.05,3.58,760+,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0046,2023-08-27,2023-06-28,2,358,219600.0,214350.4,3.58,760+,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System3,Complete
+T_0046,2023-09-26,2023-06-28,3,357,219600.0,217835.71,3.58,760+,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer B,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0046,2023-10-26,2023-06-28,4,356,219600.0,220771.19,3.58,760+,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer B,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0046,2023-11-25,2023-06-28,5,355,219600.0,216589.6,3.58,760+,60-80%,30-40%,NC,Refinance,Primary,Single Family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System1,Complete
+T_0047,2023-06-24,2023-06-24,0,360,685200.0,679393.27,7.43,700-759,80-90%,20-30%,CA,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System3,Missing
+T_0047,2023-07-24,2023-06-24,1,359,685200.0,693846.88,7.43,700-759,80-90%,20-30%,CA,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0047,2023-08-23,2023-06-24,2,358,685200.0,687273.27,7.43,700-759,80-90%,20-30%,CA,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0047,2023-09-22,2023-06-24,3,357,685200.0,678753.41,7.43,700-759,80-90%,20-30%,CA,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,>50%,2026-08-27,System1,Complete
+T_0047,2023-10-22,2023-06-24,4,356,685200.0,685878.98,7.43,700-759,80-90%,20-30%,CA,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,0-10%,2026-08-27,System1,Missing
+T_0047,2023-11-21,2023-06-24,5,355,685200.0,679776.84,7.43,700-759,80-90%,20-30%,CA,Refinance,Primary,Multi-family,Servicer A,Current,0,0,0,0,25-50%,2026-08-27,System1,Pending
+T_0048,2023-01-04,2023-01-04,0,360,371500.0,371912.62,5.36,640-699,60-80%,<20%,FL,Purchase,Primary,Condo,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System2,Complete
+T_0048,2023-02-03,2023-01-04,1,359,371500.0,364321.64,5.36,640-699,60-80%,<20%,FL,Purchase,Primary,Condo,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0048,2023-03-05,2023-01-04,2,358,371500.0,371410.3,5.36,640-699,60-80%,<20%,FL,Purchase,Primary,Condo,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System3,Complete
+T_0048,2023-04-04,2023-01-04,3,357,371500.0,368522.56,5.36,640-699,60-80%,<20%,FL,Purchase,Primary,Condo,Servicer D,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0048,2023-05-04,2023-01-04,4,356,371500.0,369457.22,5.36,640-699,60-80%,<20%,FL,Purchase,Primary,Condo,Servicer D,Current,0,0,0,0,0-10%,2026-08-27,System1,Pending
+T_0048,2023-06-03,2023-01-04,5,355,371500.0,370650.53,5.36,640-699,60-80%,<20%,FL,Purchase,Primary,Condo,Servicer D,Current,0,0,0,0,>50%,2026-08-27,System2,Complete
+T_0049,2023-05-15,2023-05-15,0,360,155700.0,155390.23,4.96,<640,<60%,>40%,GA,Purchase,Primary,Multi-family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System3,Complete
+T_0049,2023-06-14,2023-05-15,1,359,155700.0,155525.19,4.96,<640,<60%,>40%,GA,Purchase,Primary,Multi-family,Servicer B,Current,0,0,0,0,10-25%,2026-08-27,System1,Complete
+T_0049,2023-07-14,2023-05-15,2,358,155700.0,156133.63,4.96,<640,<60%,>40%,GA,Purchase,Primary,Multi-family,Servicer B,Current,0,0,0,0,0-10%,2026-08-27,System1,Pending
+T_0049,2023-08-13,2023-05-15,3,357,155700.0,156202.7,4.96,<640,<60%,>40%,GA,Purchase,Primary,Multi-family,Servicer B,60 Days Delinquent,60,0,0,0,>50%,2026-08-27,System3,Complete
+T_0049,2023-09-12,2023-05-15,4,356,155700.0,154344.32,4.96,<640,<60%,>40%,GA,Purchase,Primary,Multi-family,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System2,Missing
+T_0049,2023-10-12,2023-05-15,5,355,155700.0,154385.64,4.96,<640,<60%,>40%,GA,Purchase,Primary,Multi-family,Servicer B,Current,0,0,0,0,25-50%,2026-08-27,System1,Complete
