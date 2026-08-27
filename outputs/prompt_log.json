@@ -1,0 +1,8 @@
+[
+  {
+    "timestamp": "2026-08-27T09:53:57.849044",
+    "model": "meta-llama/llama-3.2-3b-instruct",
+    "prompt": "\nYou are a senior loan risk analyst assistant. Write a concise, professional review note for a portfolio manager.\n\n**Data Quality Score**: 0.85 / 1.00\n\n**Portfolio Summary**:\nAvg default prob: 0.003, Anomaly rate: 70.33%\n\n**Scenario Projections**:\n- Base: 0.0030 default rate\n- Adverse Credit: 0.0045 default rate\n- High Prepayment: 0.0018 default rate\n\n**Segment Risk** (by credit band):\n  Band 0: 0.0026\n  Band 1: 0.0027\n  Band 2: 0.0032\n  Band 3: 0.0037\n\n**Top 3 Anomalies** (require immediate review):\n- Loan ID: T_0029\n- Loan ID: T_0029\n- Loan ID: T_0004\n\n**Top Predictive Drivers** (most important features):\ncurrent_balance_lag3, balance_to_original, original_balance, current_balance_roll3_avg, credit_score_band_enc\n\n**Task**:\n1. Highlight the key risks and data reliability concerns.\n2. Suggest specific actions for the portfolio manager.\n3. Note any limitations (e.g., synthetic data, model uncertainty).\n4. Label your output clearly as 'Recommendation \u2013 not final decision'.\n5. Keep it under 150 words.\n",
+    "output": "**Recommendation \u2013 not final decision**\n\nDear Portfolio Manager,\n\nThis portfolio review highlights key risks and data reliability concerns. The overall Data Quality Score is 0.85, indicating moderate data quality issues. The average default probability (0.003) and anomaly rate (70.33%) suggest potential credit risk and operational issues.\n\nThe top "
+  }
+]

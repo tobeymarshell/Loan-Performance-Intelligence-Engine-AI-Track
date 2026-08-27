@@ -1,0 +1,4 @@
+scenario,odds_multiplier,unemployment_rate,interest_rate_shift
+base,1.0,4.0,0.0
+adverse_credit,1.5,7.5,1.5
+high_prepayment,0.6,3.5,-1.0

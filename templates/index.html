@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Intelligence Engine</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
+        .upload-box { border: 2px dashed #ccc; padding: 20px; text-align: center; }
+        button { background: #007bff; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        .results { background: #f8f9fa; padding: 15px; border-radius: 5px; margin-top: 20px; }
+        .llm-note { background: #e9ecef; padding: 15px; border-left: 4px solid #007bff; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>🏦 Loan Performance Intelligence Engine</h1>
+    <p>Upload a test CSV (loan_monthly_performance_test.csv) to get predictions.</p>
+    <div class="upload-box">
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv" required>
+            <button type="submit">Analyse Portfolio</button>
+        </form>
+    </div>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    {% if results %}
+        <div class="results">
+            <h3>📊 Portfolio Summary</h3>
+            <p>Rows: {{ results.rows }}</p>
+            <ul>
+                {% for key, val in results.predictions.items() %}
+                    <li><strong>{{ key }}</strong>: {{ "%.4f"|format(val) }}</li>
+                {% endfor %}
+            </ul>
+            <p><strong>Mean Anomaly Score</strong>: {{ "%.4f"|format(results.anomaly_mean) }}</p>
+            <p><strong>Top Drivers</strong>: {{ results.top_drivers | join(', ') }}</p>
+            <h3>🧠 LLM Reviewer Note</h3>
+            <div class="llm-note">{{ results.llm_note | safe }}</div>
+        </div>
+        <h3>📄 Data Preview</h3>
+        {{ df_preview | safe }}
+    {% endif %}
+</body>
+</html>
