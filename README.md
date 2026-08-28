@@ -150,7 +150,7 @@ The application will start a local Streamlit server and open the dashboard in yo
 ┌─────────────────────────────┐
 │  4. Run Intelligence Engine │
 │                             │
-│  python                       │
+│  python                     │
 │  loan_intelligence_engine.py│
 └──────────────┬──────────────┘
                │
