@@ -8,7 +8,6 @@ import numpy as np
 import joblib
 import os
 import json
-import base64
 import plotly.express as px
 
 st.set_page_config(page_title="Loan Intelligence Engine", layout="wide")
@@ -47,7 +46,7 @@ if static_df is not None:
 
 st.sidebar.header("📊 Reports & Navigation")
 
-# Locate HTML profiling report file
+# Native Streamlit download button for the profiling report
 report_path_1 = os.path.abspath('static/data_profiling_report.html')
 report_path_2 = os.path.abspath('outputs/data_profiling_report.html')
 report_file = report_path_1 if os.path.exists(report_path_1) else (report_path_2 if os.path.exists(report_path_2) else None)
@@ -55,48 +54,39 @@ report_file = report_path_1 if os.path.exists(report_path_1) else (report_path_2
 if report_file:
     with open(report_file, 'rb') as f:
         html_bytes = f.read()
-    b64_html = base64.b64encode(html_bytes).decode('utf-8')
-    data_url = f"data:text/html;base64,{b64_html}"
-    
-    st.sidebar.markdown(
-        f'''
-        <a href="{data_url}" target="_blank" style="text-decoration: none;">
-            <div style="
-                display: block;
-                width: 100%;
-                padding: 0.5em 1em;
-                margin-bottom: 10px;
-                color: #FFFFFF;
-                background-color: #262730;
-                border: 1px solid #4B4B4B;
-                border-radius: 8px;
-                text-align: center;
-                font-weight: 500;
-                cursor: pointer;">
-                📈 Open Data Profiling Report ↗
-            </div>
-        </a>
-        ''',
-        unsafe_allow_html=True
+    st.sidebar.download_button(
+        label="📥 Download Profiling Report (.html)",
+        data=html_bytes,
+        file_name="data_profiling_report.html",
+        mime="text/html",
+        use_container_width=True
     )
 else:
-    st.sidebar.warning("⚠️ Report not found. Run `loan_intelligence_engine.py` first.")
+    st.sidebar.warning("⚠️ Profiling report not found.")
 
 model_card_path = os.path.abspath('outputs/model_card.md')
 if os.path.exists(model_card_path):
-    if st.sidebar.button("📄 View Model Card"):
-        with open(model_card_path, 'r', encoding='utf-8') as f:
-            st.sidebar.text(f.read())
-else:
-    st.sidebar.warning("⚠️ Model card not found.")
+    with open(model_card_path, 'r', encoding='utf-8') as f:
+        md_text = f.read()
+    st.sidebar.download_button(
+        label="📄 Download Model Card (.md)",
+        data=md_text,
+        file_name="model_card.md",
+        mime="text/markdown",
+        use_container_width=True
+    )
 
 log_path = os.path.abspath('outputs/ai_development_log.md')
 if os.path.exists(log_path):
-    if st.sidebar.button("🤖 View AI Development Log"):
-        with open(log_path, 'r', encoding='utf-8') as f:
-            st.sidebar.text(f.read())
-else:
-    st.sidebar.warning("⚠️ AI Log not found.")
+    with open(log_path, 'r', encoding='utf-8') as f:
+        log_text = f.read()
+    st.sidebar.download_button(
+        label="🤖 Download AI Log (.md)",
+        data=log_text,
+        file_name="ai_development_log.md",
+        mime="text/markdown",
+        use_container_width=True
+    )
 
 def engineer_features(df, static_df, cat_encoders):
     df = df.copy()
