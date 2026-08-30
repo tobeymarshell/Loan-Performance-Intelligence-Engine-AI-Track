@@ -3,6 +3,7 @@ Streamlit Web Interface for Loan Performance Intelligence Engine
 """
 
 import streamlit as st
+import streamlit.components.v1 as components
 import pandas as pd
 import numpy as np
 import joblib
@@ -46,28 +47,16 @@ if static_df is not None:
 
 st.sidebar.header("📊 Reports & Navigation")
 
-# Direct HTTP static route link to open the HTML profiling report cleanly in a new tab
-st.sidebar.markdown(
-    '''
-    <a href="/app/static/data_profiling_report.html" target="_blank" style="text-decoration: none;">
-        <div style="
-            display: block;
-            width: 100%;
-            padding: 0.5em 1em;
-            margin-bottom: 10px;
-            color: #FFFFFF;
-            background-color: #262730;
-            border: 1px solid #4B4B4B;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: 500;
-            cursor: pointer;">
-            📈 Open Data Profiling Report
-        </div>
-    </a>
-    ''',
-    unsafe_allow_html=True
-)
+# Read and render the HTML report directly using Streamlit components
+report_path_1 = os.path.abspath('static/data_profiling_report.html')
+report_path_2 = os.path.abspath('outputs/data_profiling_report.html')
+report_file = report_path_1 if os.path.exists(report_path_1) else (report_path_2 if os.path.exists(report_path_2) else None)
+
+show_report = False
+if report_file:
+    show_report = st.sidebar.checkbox("📈 View Data Profiling Report")
+else:
+    st.sidebar.warning("⚠️ Report not found. Run `loan_intelligence_engine.py` first.")
 
 model_card_path = os.path.abspath('outputs/model_card.md')
 if os.path.exists(model_card_path):
@@ -84,6 +73,13 @@ if os.path.exists(log_path):
             st.sidebar.text(f.read())
 else:
     st.sidebar.warning("⚠️ AI Log not found.")
+
+# Display profiling report inline if checked
+if show_report and report_file:
+    st.subheader("📈 Data Profiling Report")
+    with open(report_file, 'r', encoding='utf-8') as f:
+        html_content = f.read()
+    components.html(html_content, height=800, scrolling=True)
 
 def engineer_features(df, static_df, cat_encoders):
     df = df.copy()
