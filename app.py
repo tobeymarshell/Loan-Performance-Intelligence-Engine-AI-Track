@@ -3,12 +3,12 @@ Streamlit Web Interface for Loan Performance Intelligence Engine
 """
 
 import streamlit as st
-import streamlit.components.v1 as components
 import pandas as pd
 import numpy as np
 import joblib
 import os
 import json
+import base64
 import plotly.express as px
 
 st.set_page_config(page_title="Loan Intelligence Engine", layout="wide")
@@ -47,14 +47,38 @@ if static_df is not None:
 
 st.sidebar.header("📊 Reports & Navigation")
 
-# Read and render the HTML report directly using Streamlit components
+# Locate HTML profiling report file
 report_path_1 = os.path.abspath('static/data_profiling_report.html')
 report_path_2 = os.path.abspath('outputs/data_profiling_report.html')
 report_file = report_path_1 if os.path.exists(report_path_1) else (report_path_2 if os.path.exists(report_path_2) else None)
 
-show_report = False
 if report_file:
-    show_report = st.sidebar.checkbox("📈 View Data Profiling Report")
+    with open(report_file, 'rb') as f:
+        html_bytes = f.read()
+    b64_html = base64.b64encode(html_bytes).decode('utf-8')
+    data_url = f"data:text/html;base64,{b64_html}"
+    
+    st.sidebar.markdown(
+        f'''
+        <a href="{data_url}" target="_blank" style="text-decoration: none;">
+            <div style="
+                display: block;
+                width: 100%;
+                padding: 0.5em 1em;
+                margin-bottom: 10px;
+                color: #FFFFFF;
+                background-color: #262730;
+                border: 1px solid #4B4B4B;
+                border-radius: 8px;
+                text-align: center;
+                font-weight: 500;
+                cursor: pointer;">
+                📈 Open Data Profiling Report ↗
+            </div>
+        </a>
+        ''',
+        unsafe_allow_html=True
+    )
 else:
     st.sidebar.warning("⚠️ Report not found. Run `loan_intelligence_engine.py` first.")
 
@@ -73,13 +97,6 @@ if os.path.exists(log_path):
             st.sidebar.text(f.read())
 else:
     st.sidebar.warning("⚠️ AI Log not found.")
-
-# Display profiling report inline if checked
-if show_report and report_file:
-    st.subheader("📈 Data Profiling Report")
-    with open(report_file, 'r', encoding='utf-8') as f:
-        html_content = f.read()
-    components.html(html_content, height=800, scrolling=True)
 
 def engineer_features(df, static_df, cat_encoders):
     df = df.copy()
