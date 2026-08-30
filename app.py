@@ -3,12 +3,12 @@ Streamlit Web Interface for Loan Performance Intelligence Engine
 """
 
 import streamlit as st
-import streamlit.components.v1 as components
 import pandas as pd
 import numpy as np
 import joblib
 import os
 import json
+import base64
 from datetime import datetime
 import plotly.express as px
 
@@ -48,21 +48,37 @@ if static_df is not None:
 
 st.sidebar.header("📊 Reports & Navigation")
 
+# --- Open Profiling Report in a New Tab via Data URI ---
 report_path = os.path.abspath('outputs/data_profiling_report.html')
 if os.path.exists(report_path):
-    # Toggle switch to embed report directly in main view
-    show_report = st.sidebar.checkbox("📈 View Data Profiling Report")
+    with open(report_path, "r", encoding="utf-8") as f:
+        html_content = f.read()
     
-    # Download button for local file access in hosted environments
-    with open(report_path, "rb") as f:
-        st.sidebar.download_button(
-            label="📥 Download Profiling Report HTML",
-            data=f,
-            file_name="data_profiling_report.html",
-            mime="text/html"
-        )
+    encoded_html = base64.b64encode(html_content.encode('utf-8')).decode('utf-8')
+    href = f'data:text/html;charset=utf-8;base64,{encoded_html}'
+    
+    st.sidebar.markdown(
+        f'''
+        <a href="{href}" target="_blank" style="text-decoration: none;">
+            <div style="
+                display: block;
+                width: 100%;
+                padding: 0.5em 1em;
+                margin-bottom: 10px;
+                color: #FFFFFF;
+                background-color: #262730;
+                border: 1px solid #4B4B4B;
+                border-radius: 8px;
+                text-align: center;
+                font-weight: 500;
+                cursor: pointer;">
+                📈 Open Profiling Report (New Tab)
+            </div>
+        </a>
+        ''',
+        unsafe_allow_html=True
+    )
 else:
-    show_report = False
     st.sidebar.warning("⚠️ Report not found. Run `loan_intelligence_engine.py` first.")
 
 model_card_path = os.path.abspath('outputs/model_card.md')
@@ -81,12 +97,6 @@ if os.path.exists(log_path):
 else:
     st.sidebar.warning("⚠️ AI Log not found.")
 
-# Render embedded HTML report if checkbox is checked
-if show_report:
-    st.subheader("📈 Data Profiling Report")
-    with open(report_path, 'r', encoding='utf-8') as f:
-        html_data = f.read()
-    components.html(html_data, height=800, scrolling=True)
 
 def engineer_features(df, static_df, cat_encoders):
     df = df.copy()
