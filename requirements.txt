@@ -23,3 +23,6 @@ streamlit>=1.28.0
 
 # LLM Integration (Optional - but imported)
 openai>=1.0.0
+
+# To convert data_profiling.html to .pdf format
+pip install xhtml2pdf
