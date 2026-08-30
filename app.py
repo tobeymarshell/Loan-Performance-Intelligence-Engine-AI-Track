@@ -8,8 +8,6 @@ import numpy as np
 import joblib
 import os
 import json
-import webbrowser
-from datetime import datetime
 import plotly.express as px
 
 st.set_page_config(page_title="Loan Intelligence Engine", layout="wide")
@@ -47,18 +45,34 @@ if static_df is not None:
     st.sidebar.success("✅ Static attributes loaded")
 
 st.sidebar.header("📊 Reports & Navigation")
-report_path = os.path.abspath('outputs/data_profiling_report.html')
-if os.path.exists(report_path):
-    if st.sidebar.button("📈 Open Data Profiling Report"):
-        webbrowser.open('file://' + report_path)
-        st.sidebar.success("✅ Report opened in your browser!")
-else:
-    st.sidebar.warning("⚠️ Report not found. Run `loan_intelligence_engine.py` first.")
+
+# Direct HTTP static route link to open the HTML profiling report cleanly in a new tab
+st.sidebar.markdown(
+    '''
+    <a href="/app/static/data_profiling_report.html" target="_blank" style="text-decoration: none;">
+        <div style="
+            display: block;
+            width: 100%;
+            padding: 0.5em 1em;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+            background-color: #262730;
+            border: 1px solid #4B4B4B;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            cursor: pointer;">
+            📈 Open Data Profiling Report
+        </div>
+    </a>
+    ''',
+    unsafe_allow_html=True
+)
 
 model_card_path = os.path.abspath('outputs/model_card.md')
 if os.path.exists(model_card_path):
     if st.sidebar.button("📄 View Model Card"):
-        with open(model_card_path, 'r') as f:
+        with open(model_card_path, 'r', encoding='utf-8') as f:
             st.sidebar.text(f.read())
 else:
     st.sidebar.warning("⚠️ Model card not found.")
@@ -66,7 +80,7 @@ else:
 log_path = os.path.abspath('outputs/ai_development_log.md')
 if os.path.exists(log_path):
     if st.sidebar.button("🤖 View AI Development Log"):
-        with open(log_path, 'r') as f:
+        with open(log_path, 'r', encoding='utf-8') as f:
             st.sidebar.text(f.read())
 else:
     st.sidebar.warning("⚠️ AI Log not found.")
