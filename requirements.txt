@@ -26,3 +26,5 @@ openai>=1.0.0
 
 # To convert data_profiling.html to .pdf format
 xhtml2pdf
+beautifulsoup4
+html5lib
