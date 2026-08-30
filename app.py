@@ -8,7 +8,9 @@ import numpy as np
 import joblib
 import os
 import json
+import io
 import plotly.express as px
+from xhtml2pdf import pisa
 
 st.set_page_config(page_title="Loan Intelligence Engine", layout="wide")
 st.title("🏦 Loan Performance Intelligence Engine")
@@ -46,7 +48,14 @@ if static_df is not None:
 
 st.sidebar.header("📊 Reports & Navigation")
 
-# Native Streamlit download button for the profiling report
+def convert_html_to_pdf(html_content):
+    pdf_buffer = io.BytesIO()
+    pisa_status = pisa.CreatePDF(io.BytesIO(html_content), dest=pdf_buffer)
+    if pisa_status.err:
+        return None
+    return pdf_buffer.getvalue()
+
+# Locate HTML profiling report file and convert to PDF
 report_path_1 = os.path.abspath('static/data_profiling_report.html')
 report_path_2 = os.path.abspath('outputs/data_profiling_report.html')
 report_file = report_path_1 if os.path.exists(report_path_1) else (report_path_2 if os.path.exists(report_path_2) else None)
@@ -54,13 +63,26 @@ report_file = report_path_1 if os.path.exists(report_path_1) else (report_path_2
 if report_file:
     with open(report_file, 'rb') as f:
         html_bytes = f.read()
-    st.sidebar.download_button(
-        label="📥 Download Profiling Report (.html)",
-        data=html_bytes,
-        file_name="data_profiling_report.html",
-        mime="text/html",
-        use_container_width=True
-    )
+    
+    pdf_data = convert_html_to_pdf(html_bytes)
+    
+    if pdf_data:
+        st.sidebar.download_button(
+            label="📥 Download Profiling Report (.pdf)",
+            data=pdf_data,
+            file_name="data_profiling_report.pdf",
+            mime="application/pdf",
+            use_container_width=True
+        )
+    else:
+        # Fallback to HTML download if conversion fails on complex scripts
+        st.sidebar.download_button(
+            label="📥 Download Profiling Report (.html)",
+            data=html_bytes,
+            file_name="data_profiling_report.html",
+            mime="text/html",
+            use_container_width=True
+        )
 else:
     st.sidebar.warning("⚠️ Profiling report not found.")
 
